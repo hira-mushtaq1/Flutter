@@ -502,6 +502,7 @@
   //     print('$num');
   //   }
   // }
+
 void main() 
 {
   // List<int> inputList = [2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -562,15 +563,18 @@ void main()
 
 
 
-  int numRows = 5;
+int rows= 4;
+int num=1;
+// for (int i in 4){}
+for (int i=1; i<=rows; i++){
+  for(int j=1; j<i; j++ ){
+    num+=1;
 
-  for (int row = 1; row <= numRows; row++) {
-    for (int col = 1; col <= row; col++) {
-      print('* ');
-    }
-    print('');
+
   }
+  print(num);
 
+}
 
 
 
