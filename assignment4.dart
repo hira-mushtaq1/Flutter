@@ -20,6 +20,7 @@ for(var i in numbers){
 
 print(even);
 
+  print('==================================================');
 /*Q2. Write a program that prints the Fibonacci sequence up to a given
 number using a for loop.
 Example:
@@ -38,6 +39,8 @@ for(int i=2; i<=number; i++){
   b=c; //b= 1 => 2=>3 =>5 =>8
 }
 print('\n');
+
+  print('==================================================');
   
 /*Q3. Implement a code that checks whether a given number is prime or not.
  Example:
@@ -69,6 +72,7 @@ Output: 17 is a prime number.*/
 
 print('\n');
 
+  print('==================================================');
 /* Q4. Implement a code that finds the factorial of a number using a while
 loop or for loop.
 Example:
@@ -82,6 +86,8 @@ for(int i=1; i<=num; i++){
 
 }
 print("The factorial of $num is $fact");
+
+  print('==================================================');
 
 
 
@@ -104,6 +110,8 @@ Output: Sum of digits: 15*/
 
   print("Sum of digits: $digitSum");
 
+   print('==================================================');
+
 
 /*Q6Implement a code that finds the largest element in a list using a for
 loop.
@@ -118,6 +126,8 @@ Output: Largest element: 9 */
     randomArray[i] > largest ? largest = randomArray[i] : null;
   }
   print("Largest element: $largest");
+
+   print('==================================================');
 
 /*Q7. Write a program that prints the multiplication table of a given number
 using a for loop.
@@ -137,6 +147,8 @@ for(int i=1; i<=10 ;i++){
   print('$table x $i = ${table * i}');
 
 }
+
+  print('==================================================');
 
   /*Q9. Implement a function that checks if a given string is a palindrome.
 Example:
@@ -167,6 +179,8 @@ Output: "radar" is a palindrome. */
   } else {
     print('$str is not a palindrome');
   }
+
+      print('==================================================');
   
 
 
@@ -176,7 +190,10 @@ Output: "radar" is a palindrome. */
   for (int i = 1; i <= cube; i++) {
     int cubeNumber = i * i * i;
     print('Number is : $i and cube of the $i is :$i^3 = $cubeNumber');
+       
   }
+
+   print('==================================================');
 
 
 /*Q11   Write a program to display a pattern like a right angle triangle using an
@@ -191,7 +208,10 @@ for (int i = 1; i < 5; i++) {
       stdout.write(" *");
     }
     print(" ");
+    
   }
+
+      print('==================================================');
 
 /*Q12  Write a program to display a pattern like a right angle triangle with a
 number using loop.
@@ -208,8 +228,10 @@ for (int i = 1; i < 5; i++) {
       stdout.write(" $j");
     }
     print(" ");
+      
   }
 
+  print('==================================================');
 
 /*Q13 Write a program to make such a pattern like a right angle triangle with
 a number which will repeat a number in a row.
@@ -224,7 +246,10 @@ for (int i = 1; i < 5; i++) {
       stdout.write(" $i");
     }
     print(" ");
+    
   }
+
+  print('==================================================');
 
 /*Q14 Write a program to make such a pattern like a right angle triangle with
 the number increased by 1 using loop..
@@ -234,52 +259,76 @@ The pattern like :
 4 5 6
 7 8 9 10 */
 
-  int currentNumber = 1;
+  int n = 1;
   for (int i = 1; i < 5; i++) {
-    for (int j = 1; j <= i; j++) {
-      for (int k = 1; k < i; k++) {
-        stdout.write(' ');
-      }
-      stdout.write(' $currentNumber');
-      currentNumber++;
+  
+    for (int j = 1; j <= -i; j++) {
+      stdout.write(' ');
     }
-    print('');
+
+    for (int k = 1; k <= i; k++) {
+      stdout.write('$n ');
+      n++;
+    }
+
+    print(''); 
+
   }
+
+          print('==================================================');
 
 /*Q15 Write a program to make a pyramid pattern with numbers increased by 1.
 The pattern like :
-1
-2 3
-4 5 6
-7 8 9 10 */
+    1
+  2   3
+4     5    6
+7  8  9    10 */
 
 
-  // int currentNumber = 1;
-
-  // for (int i = 1; i < 5; i++) {
-  //   for (int j = 1; j <= i; j++) {
-  //     stdout.write(' $currentNumber');
-  //     currentNumber++;
-  //   }
-  //   print('');
-  // }
-/*Q16 Write a program to make such a pattern as a pyramid with an asterisk.
-*
-* *
-* * *
-* * * * 
-*/
-  
-  int totalRows = 5;
-
-  for (int row = 1; row <= totalRows; row++) {
-    for (int col = 1; col <= row; col++) {
-      print('* ');
+  int m = 1; 
+  for (int i = 1; i < 5; i++) {
+   
+    for (int j = 1; j <= 4 - i; j++) {
+      stdout.write(' ');
     }
-    print('');
+
+    
+    for (int k = 1; k <= i; k++) {
+      stdout.write('$m ');
+      m++;
+    }
+
+    print(''); 
+
+      
   }
 
+    print('==================================================');
 
+/*Q16 Write a program to make such a pattern as a pyramid with an asterisk.
+         *
+     *    *
+   *     *    *
+*   *   *    * 
+*/
+  
+
+  for (int i = 1; i < 5; i++) {
+    for (int j = 1; j <= 4 - i; j++) {
+      stdout.write(' ');
+    }
+
+    for (int k = 1; k <= i; k++) {
+      stdout.write('* ');
+     
+    }
+
+    print('');
+
+   
+  }
+
+  print('==================================================');
 
 
 
@@ -310,6 +359,8 @@ while (isLogin== false){
       }
 
 }
+
+  print('==================================================');
 
 /*Q18 Write a program that asks the user for their email and password. You
 are given a list of predefined user credentials (email and password
@@ -345,6 +396,8 @@ provided. */
     }
   }
 
+   print('==================================================');
+
 /*Q19 Write a program that takes a list of numbers as input and prints the
 numbers greater than 5 using a for loop and if-else condition. */
 
@@ -356,6 +409,8 @@ List<int> test = [1, 2, 35, 54, 55, 66, 7, 8, 9];
     }
   }
   print(greaterThanFive);
+
+   print('==================================================');
 
 
 /*Q20 Write a program that counts the number of vowels in a given string
@@ -373,6 +428,8 @@ for (int i=1; i <user.length; i++){
 }
 print('The number of vowels in the string is: $count');
 
+  print('==================================================');
+
 
 
 /*Q21 Implement a code that finds the maximum and minimum elements in a
@@ -387,6 +444,7 @@ list using a for loop and if-else condition. */
   print("MaximumElem element: $maximumElem");
   print("Minimum element: $minimumElem");
 
+  print('==================================================');
 
 /*Q22 Write a program that calculates the sum of the squares of all odd
 numbers in a given list using a for loop and if-else condition. */
@@ -401,6 +459,8 @@ for(int i=0; i < evenOdd.length; i++){
   }
 }
 print(sumOfOddSquares);
+
+  print('==================================================');
 
 /*Q23 Write a program that takes a list of student details as input, where
 each student is represented by a map containing their name, marks,
@@ -451,6 +511,7 @@ List<Map<String, dynamic>> studentDetails = [
     print('Name: $name, Grade: $grade');
   }
   
+   print('==================================================');
 
 /*Q24 Implement a code that finds the average of all the negative numbers in
 a list using a for loop and if-else condition. */
@@ -466,6 +527,7 @@ List<int> positiveNegativeNumber = [-1, -2, -3, -4, -5, 0, 1, 2, 3, 4, 5];
   }
   print('Sum of negative numbers are: $sumnegNumber');
 
+  print('==================================================');
 
 /*Q25 Write a program that takes a list of integers as input and returns a new
 list containing only the prime numbers from the original list. Implement
@@ -495,6 +557,8 @@ List<int> inputList = [4, 7, 10, 13, 16, 19, 22, 25, 28, 31];
 
   print('Original list: $inputList');
   print('Prime numbers: $primes');
+
+   print('==================================================');
 }
 
 
