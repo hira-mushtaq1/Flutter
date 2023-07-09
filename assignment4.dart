@@ -186,15 +186,11 @@ The pattern like :
 **
 ***
 ****                                     */
-  int rows = 4;
-
-  for (int i = 1; i <= rows; i++) {
-    String rw = "";
-
+for (int i = 1; i < 5; i++) {
     for (int j = 1; j <= i; j++) {
-      rw += ('*').toString();
+      stdout.write(" *");
     }
-    print(rw);
+    print(" ");
   }
 
 /*Q12  Write a program to display a pattern like a right angle triangle with a
@@ -206,12 +202,12 @@ The pattern like :
 1234*/
 
 
-  for (int i = 1; i <= rows; i++) {
-    String row = "";
+
+for (int i = 1; i < 5; i++) {
     for (int j = 1; j <= i; j++) {
-      row += j.toString();
+      stdout.write(" $j");
     }
-    print(row);
+    print(" ");
   }
 
 
@@ -223,13 +219,11 @@ The pattern like :
 333
 4444*/ 
 
-
-  for (int i = 1; i <= rows; i++) {
-    String row = "";
+for (int i = 1; i < 5; i++) {
     for (int j = 1; j <= i; j++) {
-      row += i.toString();
+      stdout.write(" $i");
     }
-    print(row);
+    print(" ");
   }
 
 /*Q14 Write a program to make such a pattern like a right angle triangle with
@@ -240,15 +234,17 @@ The pattern like :
 4 5 6
 7 8 9 10 */
 
-for (int i = 1; i <= rows; i++) {
-    String row = "";
-    for (int j = 1; j <= 10; j++) {
-      row += j.toString();
+  int currentNumber = 1;
+  for (int i = 1; i < 5; i++) {
+    for (int j = 1; j <= i; j++) {
+      for (int k = 1; k < i; k++) {
+        stdout.write(' ');
+      }
+      stdout.write(' $currentNumber');
+      currentNumber++;
     }
-    print(row);
+    print('');
   }
-
-
 
 /*Q15 Write a program to make a pyramid pattern with numbers increased by 1.
 The pattern like :
@@ -258,17 +254,15 @@ The pattern like :
 7 8 9 10 */
 
 
-  int numRows = 4;
-  int currentNumber = 1;
+  // int currentNumber = 1;
 
-  for (int row = 1; row <= numRows; row++) {
-    for (int col = 1; col <= row; col++) {
-      print('$currentNumber ');
-      currentNumber++;
-    }
-    print('');
-  }
-
+  // for (int i = 1; i < 5; i++) {
+  //   for (int j = 1; j <= i; j++) {
+  //     stdout.write(' $currentNumber');
+  //     currentNumber++;
+  //   }
+  //   print('');
+  // }
 /*Q16 Write a program to make such a pattern as a pyramid with an asterisk.
 *
 * *
@@ -284,7 +278,6 @@ The pattern like :
     }
     print('');
   }
-
 
 
 
